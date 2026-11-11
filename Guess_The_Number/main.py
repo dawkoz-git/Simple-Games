@@ -12,12 +12,8 @@ The first will be the lower range, and the latter will be the upper range.
       )
 
 # Generating the range the guesses will be in
-
 lower_bound = int(input("First number: "))
 upper_bound = int(input("Last number: "))
 
 # Generating a number to guess within bounds
 correct_number = random.randint(lower_bound, upper_bound)
-
-
-
