@@ -1,30 +1,30 @@
-import random
+import functions
 
 # Welcome Banner
 print("""
 
 ##########################################################################
                     WELCOME TO THE GUESSING GAME!
-Please pick two numbers to represent the range that your guess will be in.
-The first will be the lower range, and the latter will be the upper range.
+Your objective is to guess the number within a certain number of attempts!
+                            Good luck.
 ##########################################################################
 """
       )
-
-# Generating the range the guesses will be in
-lower_bound = int(input("First number: "))
-upper_bound = int(input("Last number: "))
-
-# Generating a number to guess within bounds
-correct_number = random.randint(lower_bound, upper_bound)
-
-# Attempt system
-print("And how many attempts would you like?")
-total_attempts = int(input())
-
-# Gameplay Loop
+# Setting up the gameloop
 incorrect_guess = True
 
-while True:
-    print("What is your guess?")
-    guess = int(input())
+while incorrect_guess:
+
+    # Difficulty settings
+    print("Do you want to play on easy, medium, or hard difficulty? (1, 2, or 3)")
+    print("""
+    [1] Easy - 6 guesses for a number between 1-100
+    [2] Medium - 13 guesses for a number between 1-10,000
+    [3] Hard - 20 guesses for a number between 1-100,000,000
+    """)
+
+    difficulty = int(input())
+
+
+
+
